@@ -1,12 +1,3 @@
-function updateMediaQuery() {
-  let logoImg = document.getElementById("logoImg")
-  let searchInput = document.getElementById("searchBarInput")
-  if (window.matchMedia("(min-width: 800px)").matches) {
-    logoImg.src = "../../src/imgs/logo.webp"
-    searchInput.placeholder = "Buscar produtos, marcas e muito mais"
-  }
-}
+import { initHeader } from "./features/header/header.js"
 
-updateMediaQuery()
-
-console.log("hello")
+initHeader()
