@@ -3,9 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mercado Livre</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e69293070d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Mercado Livre</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <a class="logo" href="./index.html">
+        <img
+          class="logo__img"
+          id="logoImg"
+          src="./imgs/logo__mobile"
+          alt="Página inicial"
+        />
+      </a>
+
+      <div class="search-bar">
+        <input
+          class="search-bar__input"
+          id="searchBarInput"
+          placeholder="Estou buscando..."
+          type="text"
+        />
+        <button class="search-bar__button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--menu">
+            <button><i class="fas fa-bars"></i></button>
+          </li>
+          <li class="nav__item nav__item--auth">
+            <a href="">Crie a sua conta</a>
+          </li>
+          <li class="nav__item nav__item--auth"><a href="">Entrar</a></li>
+          <li class="nav__item">
+            <a href><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
   <script src="./main.js"></script>
 </html>
