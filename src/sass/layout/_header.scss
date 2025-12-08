@@ -1,41 +1,10 @@
-@import url("https://use.typekit.net/veu7fqg.css");
-
-:root {
-  --yellow: #ffe600;
-  --blue: #3483fa;
-  --light-blue: rgba(65, 137, 230, 0.15);
-  --green: #00a650;
-  --light-green: #00a6501a;
-}
-
-* {
-  padding: 0;
-  border: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-input {
-  outline: 0;
-}
+@use "../abstracts/variables" as *;
 
 .header {
   height: 10vh;
   display: flex;
   align-items: center;
-  background-color: var(--yellow);
+  background-color: $yellow;
 }
 
 .logo {
@@ -59,33 +28,33 @@ input {
   box-shadow: -0.5px 1px 1px 0.3px rgba(0, 0, 0, 0.098);
 }
 
+.search-bar:focus-within {
+  outline: 1.5px solid $blue;
+}
+
 .search-bar__input {
   flex: 1;
   font-size: 16px;
   width: 80%;
 }
 
-.search-bar:focus-within {
-  outline: 1.5px solid var(--blue);
-}
-
 .search-bar__button {
   width: 40px;
   border-radius: 0px 3px 3px 0px;
   background-color: white;
-}
 
-.search-bar__button::before {
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 1.5px;
-  transform: translateX(-12px);
-  background-color: gray;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 1.5px;
+    transform: translateX(-12px);
+    background-color: gray;
+  }
 
-.search-bar__button:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nav {
