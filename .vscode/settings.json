@@ -9,8 +9,7 @@
   "liveSassCompile.settings.includeItems": ["/src/sass/**/*.scss"],
   "liveSassCompile.settings.excludeList": [
     "/**/node_modules/**",
-    "/.vscode/**",
-    "/src/sass/**/_*.scss"
+    "/.vscode/**"
   ],
   "liveSassCompile.settings.generateMap": true
 }
