@@ -22,6 +22,142 @@ input {
   outline: 0;
 }
 
+button {
+  background-color: unset;
+}
+
+body {
+  background-color: #ebebeb;
+  overflow-x: hidden;
+}
+
+.carousel {
+  position: relative;
+  margin: 40px auto 0px;
+  width: 93vw;
+  min-height: 75vh;
+  background-color: white;
+  border-radius: 6px;
+  padding: 15px 0px;
+  box-shadow: 0px 0px 1px 0.1px rgba(0, 0, 0, 0.231);
+}
+
+.carousel__title {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.carousel__img {
+  width: 100%;
+}
+
+.cards-container-outer {
+  overflow: hidden;
+  width: 93vw;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  transition: transform 0.5s;
+}
+
+.carousel__card {
+  padding: 0px 15px;
+  flex-shrink: 0;
+  width: 15.5vw;
+}
+.carousel__card:hover {
+  cursor: pointer;
+}
+.carousel__card:hover .carousel__description {
+  color: #3483fa;
+}
+
+.carousel__description {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.3;
+  word-spacing: 3px;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.9);
+  -webkit-font-smoothing: antialiased;
+}
+
+.carousel__old-price {
+  margin-top: 10px;
+  text-decoration: line-through;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.47);
+}
+
+.carousel__price {
+  display: flex;
+  font-size: 23px;
+}
+.carousel__price sup {
+  font-size: 13px;
+  position: relative;
+  top: 7px;
+  line-height: 1;
+  vertical-align: baseline;
+}
+
+.carousel__button {
+  position: absolute;
+  z-index: 100;
+  top: calc(50% - 30px);
+  font-size: 20px;
+  color: #3483fa;
+  box-shadow: 0px 1px 2px 0.13px rgba(0, 0, 0, 0.158);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: white;
+}
+.carousel__button:hover {
+  box-shadow: 0px 7px 17px 0.13px rgba(0, 0, 0, 0.158);
+  cursor: pointer;
+}
+
+.carousel__button--left {
+  left: -27.5px;
+}
+
+.carousel__button--right {
+  right: 0;
+  transform: translateX(27.5px);
+}
+
+.label {
+  display: inline;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-weight: 600;
+}
+
+.label--green {
+  background-color: rgba(0, 166, 80, 0.1019607843);
+  color: #00a650;
+}
+
+.label--full {
+  display: inline;
+  font-size: 12px;
+  color: #00a650;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.isHidden {
+  display: none;
+}
+
 .header {
   height: 10vh;
   display: flex;
